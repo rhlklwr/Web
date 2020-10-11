@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Input</title>
+</head>
+<body>
+    <form action="process.php"></form>
+    <div>
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="text" value="Rahul"><br>
+    </div>
+    <div>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="email"><br>
+    </div>
+    <div>
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" cols="10" rows="5"></textarea><br>
+    </div>
+    <div>
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+            <option value="Male">M</option>
+            <option value="Female" selected>F</option>
+            <option value="Other">O</option>
+        </select>  
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+    </div>
+
+    <div>
+        <label for="Date">Date</label>
+        <input type="date" name="date" id="date">
+    </div>
+    <div>
+        <label for="Membership">Membership</label>
+        <input type="radio" name="Membership" value="simple" id="Membership" checked>simple
+        <input type="radio" name="Membership" value="Standard" id="Membership">Standard
+        <input type="radio" name="Membership" value="Super" id="Membership">Super
+    </div>
+    <div>
+        <label for="Membership">Membership</label>
+        <input type="checkbox" name="Membership" value="simple" id="Membership" checked>simple
+        <input type="checkbox" name="Membership" value="Standard" id="Membership">Standard
+        <input type="checkbox" name="Membership" value="Super" id="Membership">Super
+    </div>
+    <input type="submit" value="submit">
+    <!-- Button Tag -->
+    <button type="button" value="submit">Submit</button>
+    <button type="reset">reset</button>
+</body>
+</html>
