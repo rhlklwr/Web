@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&display=swap" rel="stylesheet">
+    <title>CSS selector</title>
+    <style>
+
+        /* Body styling */
+        body {
+            background-color: grey;
+            font-family: 'Fira Sans', sans-serif;
+            font-size: 18px;
+            line-height: 1.6em;
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* # -> id and . -> class */
+        .primary-heading {
+            color: green;
+        }
+
+        #welcome {
+            background-color: grey;
+        }
+
+        /* Multiple selectors */
+        #welcome, #about {
+            border: 1px solid white;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* Nested selector */
+        #welcome p {
+            font-size: 20px;
+        }
+
+        #about {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome">
+        <h2 class="primary-heading">Welcome</h2>
+        <p>Lorem ipsum dolor sit, 
+            amet consectetur adipisicing elit. Nisi repellendus sequi ducimus! 
+            Accusantium maxime at laudantium dolorum voluptatibus aperiam, eaque 
+            error optio voluptatem ex dicta in tempore distinctio veniam iure?</p>
+    </div>
+    <div id="about">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nesciunt perspiciatis assumenda culpa quo illo sapiente 
+            tempora quisquam hic est aperiam!</p>
+    </div>
+</body>
+</html>
