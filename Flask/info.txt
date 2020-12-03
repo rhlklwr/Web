@@ -1,0 +1,4 @@
+export/set FLASK_APP=File_name.py
+flask run
+
+app.run(debug=True)
