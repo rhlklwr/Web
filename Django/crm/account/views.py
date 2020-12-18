@@ -27,6 +27,8 @@ def registerPage(request):
             
             Customer.objects.create(
                 user=user,
+                name=user.username,
+                email=user.email,
             )
             messages.success(request, 'Account was created for ' + username)
             return redirect('login')
