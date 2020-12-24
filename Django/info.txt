@@ -33,3 +33,6 @@ Describes the communication options for the target resource.
 
 8	TRACE
 Performs a message loop-back test along the path to the target resource.
+
+
+chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
