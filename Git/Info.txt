@@ -1,0 +1,57 @@
+git --version
+git config --global user.name
+git config --global user.email
+
+git config --list
+
+git help config
+git config --help
+
+git init
+rm -rf .git
+
+git status
+
+touch .gitignore
+
+git add -A or git add .
+
+git reset
+
+git commit -m
+
+git log
+
+git clone <url>
+
+git remote -v
+git brance -a
+
+git diff
+
+git pull origin master
+git push origin master
+
+git branch
+git branch <name>
+git checkout <name>
+
+git push -u origin <branch name>
+git branch -a
+
+git checkout master
+
+git pull origin master
+
+git branch --merged
+
+git merge <branch name>
+
+git push origin master
+
+git branch -d <branch name>
+
+git push origin --delete <branch name>
+
+
+
