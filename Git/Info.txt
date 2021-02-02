@@ -102,6 +102,12 @@ git stash drop <stash from list>        #To discard stash
 git stash clear     #It will remove everything from stash
 
 
+Git add
+
+git add -A or git add --all     #It will stage all changes in entire working tree
+git add -u or git add --update  #It will add all modified and updated file but not untracked file
+
+
 
 
 
