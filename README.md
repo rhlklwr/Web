@@ -7,14 +7,14 @@ Completed Dummy Project -
 Ongoing Project - 
 
 1. AnimeBlog - 
-Webiste to create blogs.
-CRUD functionality and user authentication function.
-Newuser can register and able to reset there password using email ID.
-Technology used - HTML, CSS, Bootstrap, Flask
+Webiste to create blogs.\n
+CRUD functionality and user authentication function.\n
+Newuser can register and able to reset there password using email ID.\n
+Technology used - HTML, CSS, Bootstrap, Flask\n
 https://blog-rhlklwr.herokuapp.com/
 
 2. food_order_manger - 
-Website to record and maintain orders.
-CRUD functionality with admin and user access.
-echnology used - HTML, CSS, Bootstrap, Django
+Website to record and maintain orders.\n
+CRUD functionality with admin and user access.\n
+echnology used - HTML, CSS, Bootstrap, Django\n
 https://crm-rhlklwr.herokuapp.com/
