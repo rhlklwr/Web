@@ -26,7 +26,7 @@ git log --stat
 git clone <url>
 
 git remote -v
-git brance -a
+git branch -a
 
 git diff
 
