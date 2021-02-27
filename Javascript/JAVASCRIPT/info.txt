@@ -1,0 +1,123 @@
+JAVASCRIPT types
+1. Number
+2. String
+3. Boolean
+4. Undefined
+5. Null
+6. Symbol
+7. Object
+
+Comparisons
+!==
+===
+>=
+<=
+>
+<
+
+Variable
+var - Global scope
+let - Block scope
+const
+
+
+Conditionals
+if
+else
+else if
+ternary operator
+switch
+
+Logical operator
+&&
+||
+!
+
+Functions
+var a = function name() {}
+function name() {}
+return
+()
+
+Data structure
+Array
+Object
+
+Looping
+for
+while
+do
+forEach
+
+NaN - not a Number
+prompt()
+alert()
+console.log()
+
+
+DOM Selectors
+--------------
+getElementsByTagName
+getElementsByClassName
+getElementById
+
+querySelector
+querySelectorAll
+
+getAttribute
+setAttribute
+
+##Changing Styles
+style.{property} //ok
+
+className //best
+classList //best
+
+classList.add
+classList.remove
+classList.toggle
+
+##Bonus
+innerHTML //DANGEROUS
+
+parentElement
+children
+
+##It is important to CACHE selectors in variables
+
+var button = document.getElementsByTagName("button")[0]
+
+button.addEventListener("click", function() {
+    console.log("Click");
+})
+
+var button = document.getElementById("enter");
+var input = document.getElementById("userinput");
+var ul = document.querySelector("ul");
+
+function inputLength() {
+	return input.value.length;
+}
+
+function createListElement() {
+	var li = document.createElement("li");
+	li.appendChild(document.createTextNode(input.value));
+	ul.appendChild(li);
+	input.value = "";
+}
+
+function addListAfterClick() {
+	if (inputLength() > 0) {
+		createListElement();
+	}
+}
+
+function addListAfterKeypress(event) {
+	if (inputLength() > 0 && event.keyCode === 13) {
+		createListElement();
+	}
+}
+
+button.addEventListener("click", addListAfterClick);
+
+input.addEventListener("keypress", addListAfterKeypress);

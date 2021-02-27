@@ -1,0 +1,8 @@
+ctrl + B = Toggle sidebar
+zen mode
+mini map
+ctrl + W = close the file
+ctrl + Tab = toggle between file
+ctrl + P = open file with name
+ctrl + c = to select whole line
+Font Lingatures

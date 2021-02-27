@@ -1,3 +1,10 @@
 font awesome
 dynamic drive favicon
 google fonts
+https://codepen.io/ - for CSS text shadow
+
+*https://www.w3schools.com/cssref/css_selectors.asp
+*https://css-tricks.com/almanac/
+
+https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+https://developer.mozilla.org/en-US/docs/Web/Events
