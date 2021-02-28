@@ -4,12 +4,13 @@ JAVASCRIPT types
 3. Boolean
 4. Undefined
 5. Null
-6. Symbol
+6. Symbol - var sym1 = Symbol()
 7. Object
 
 Comparisons
 !==
-===
+=== it will check types
+== it will ignore type
 >=
 <=
 >
@@ -20,14 +21,28 @@ var - Global scope
 let - Block scope
 const
 
+`Hello ${name} good ${variable}`
+
 
 Conditionals
 if
 else
 else if
-ternary operator
+ternary operator (confition ? true : false)
 switch
-
+{
+	switch variable {
+		case 1:
+			something;
+			break;
+		case 2:
+			something;
+			break;
+		default:
+			something;
+			break;
+	}
+}
 Logical operator
 &&
 ||
@@ -39,15 +54,30 @@ function name() {}
 return
 ()
 
+arrow Functions = 
+const a = (a,b) => a+b 
+
+const a = (a,b) => {
+	return a+b}
+
 Data structure
 Array
 Object
+
+let {new, old} = obj
+Object{
+	a,
+	b,
+	c,
+}
+
+
 
 Looping
 for
 while
 do
-forEach
+forEach - forEach(myFunction)
 
 NaN - not a Number
 prompt()
@@ -121,3 +151,93 @@ function addListAfterKeypress(event) {
 button.addEventListener("click", addListAfterClick);
 
 input.addEventListener("keypress", addListAfterKeypress);
+
+
+Advance Functions - 
+
+#Clousres
+const first = () =>{
+	const greet = "Hi";
+	const second = () => {
+		alert(greet);
+	}
+	return second;
+}
+
+const newFunc = first();
+newFunc()
+
+#Currying
+const multiply = (a,b) => a* b;
+const curryingMultiply = (a) => (b) => a*b;
+
+#Compose
+const compose = (f, g) => (a) => f(g(a));
+
+const sum = (num) => num +1;
+
+compose(sum, sum)(5);
+
+(sum+1) +1 // answer will be 7
+
+// Avoiding side effect, function purity
+
+
+Advance Array -
+map, filter, reduce
+
+const mapArray = array.map(num => num+1);
+const mapArray = array.map((num )=> {return num+1}); same as above
+
+reduce - 
+const reduceArray = array.reduce((accumulator, num) => {
+	return accumulator + num
+}, 0) #0 is default value
+
+
+Advance Object - 
+
+reference type - 
+premetive type = 1, number
+refrence type = list, object
+
+context vs scope - 
+
+scope is like function, inside curly bracket there is new scope
+
+context - 
+this - object enviornment, on starting consloe "this" is same as window
+
+const object = {
+	a : function() {
+		consloe.log(this)
+	}
+}
+now "this" will be object
+
+Instantiation - 
+
+class Player{
+	constructor(name, type) {
+		this.name = name;
+		this.type = type;
+	}
+	introduce() {
+		console.log("ok")
+	}
+}
+
+class Wizard extends Player {
+	constructor(name, type) {
+		super(name, type)
+	}
+
+	play() {
+		consloe.log(`something ${this.type}`)
+	}
+}
+
+const wizard1 = new Wizard("Rahul", "killer")
+const wizard2 = new Wizard("Rahul", "no power")
+
+Type Coercion

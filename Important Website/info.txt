@@ -8,3 +8,5 @@ https://codepen.io/ - for CSS text shadow
 
 https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
 https://developer.mozilla.org/en-US/docs/Web/Events
+
+BABEL - Help to change latest version of javascript to compatible version
