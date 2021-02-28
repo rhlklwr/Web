@@ -240,4 +240,27 @@ class Wizard extends Player {
 const wizard1 = new Wizard("Rahul", "killer")
 const wizard2 = new Wizard("Rahul", "no power")
 
-Type Coercion
+Type Coercion - 
+
+ES7 - 
+.includes() same as "in" in python
+
+ES8 - 
+.padStart()
+.padEnd()
+
+object.values(obj)
+object.keys(obj)
+object.entries(obj)
+
+ES10 - 
+.flat() - can use on n-dimensional array to n-1 dimensional array. number can be passed to set how much flatten you need.
+.flat(2) - will reduce by n-2
+
+.flatmap()
+
+.trimStart()
+.trimEnd()
+
+Object.fromEntries()
+
