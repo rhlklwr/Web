@@ -262,5 +262,47 @@ ES10 -
 .trimStart()
 .trimEnd()
 
-Object.fromEntries()
+Object.fromEntries() - Convert list to Object
+
+try {
+
+}catch (error){
+
+}
+
+Advance loop - 
+
+- Interating
+
+for of loop - 
+for (item of list) {
+	consloe.log(item)
+}
+
+- Enumerating
+for in loop - 
+for (item in Object) {
+	consloe.log(item)
+}
+
+ES2020 - 
+
+BigInt - 
+1n - is BigInt
+Number.MAX_SAFE_INTEGER is maximum number can be use in JAVASCRIPT
+
+BigInt is use to use a number bigger than MAX_SAFE_INTEGER
+
+eg. 1052052050052 - 1n
+
+Nulish Coalescing operator - 
+
+something?.name?.power?? 'no power' - it will check null or Undefined not truthy or falsy
+
+Operation chaining operator - 
+
+something?.name?.weight - it will check if it is present and if not you will get Undefined
+
+
+Debugging - 
 
