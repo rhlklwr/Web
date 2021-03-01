@@ -1,7 +1,12 @@
 create-react-app <name_of_app>
 
+npx create-react-app <name_of_app>
+
 npm start
 npm run build
 npm test
 npm run eject
 
+https://tachyons.io/        # CSS toolkit
+
+jsx - its look like html but it is react property
