@@ -1,0 +1,18 @@
+npm -v
+node -v
+npm install npm@latest -g
+
+https://github.com/nodejs/node-gyp#on-windows
+
+npm init            #initialise before starting project
+
+npm install react
+npm install -g live-server
+npm i --save lodash                 # -g for global and -i for local
+
+browserify script.js > bundle.js        #  to conver script.js to bundle.js
+
+npm run test
+
+"build": "browserify script.js > bundle.js && live-server"  # it can use to add in package.json to create script
+

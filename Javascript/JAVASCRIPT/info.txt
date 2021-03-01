@@ -305,4 +305,11 @@ something?.name?.weight - it will check if it is present and if not you will get
 
 
 Debugging - 
+debugger
+
+Asynchoronus - 
+
+setTimeout(func, time)
+
+call stack -> WEB API -> CALLBACK queue -> Event loop
 
