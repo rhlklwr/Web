@@ -1,0 +1,7 @@
+create-react-app <name_of_app>
+
+npm start
+npm run build
+npm test
+npm run eject
+
