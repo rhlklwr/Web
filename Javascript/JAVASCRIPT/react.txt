@@ -15,3 +15,8 @@ jsx - its look like html but it is react property
 unique key warning - alwasy add one key=i, to remove this or better use ID, which dont change
 const CardComponent = robots.map((user, i) => {
         return < Card key={i} id={ robots[i].id} name={robots[i].name} email={ robots[i].email}/>})
+
+event.target.value = gives actual value of keyboard input
+
+always use below syntax when making own method -
+onSearchChange = (event) =>{
