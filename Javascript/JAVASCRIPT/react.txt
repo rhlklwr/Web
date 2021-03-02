@@ -19,4 +19,8 @@ const CardComponent = robots.map((user, i) => {
 event.target.value = gives actual value of keyboard input
 
 always use below syntax when making own method -
-onSearchChange = (event) =>{
+onSearchChange = (event) =>{}
+
+JSON place holder  - fake API
+
+Life cycle methods
