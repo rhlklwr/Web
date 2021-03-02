@@ -14,3 +14,5 @@ BABEL - Help to change latest version of javascript to compatible version
 https://hatchful.shopify.com/onboarding/pick-space - to create logo
 
 https://mdbootstrap.com/docs/react/ - React component
+
+https://www.cufonfonts.com/ - for free fonts
