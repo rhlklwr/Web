@@ -8,6 +8,11 @@ npm test
 npm run eject
 npm install
 
+porps
+state
+lifecycle method
+children
+
 https://tachyons.io/        # CSS toolkit
 
 jsx - its look like html but it is react property
