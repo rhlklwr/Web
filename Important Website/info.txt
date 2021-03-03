@@ -18,3 +18,5 @@ https://mdbootstrap.com/docs/react/ - React component
 https://www.cufonfonts.com/ - for free fonts
 
 https://github.com/kiteco?page=2
+
+CSS3 pattern gallery
