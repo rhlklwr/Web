@@ -313,3 +313,32 @@ setTimeout(func, time)
 
 call stack -> WEB API -> CALLBACK queue -> Event loop
 
+
+ES9(2018) -
+
+#Object spread operator
+const animal = {
+	tiger: 25,
+	lion: 7,
+	monkey: 2,
+}
+const {tiger, ...rest} = animals;
+
+...array
+
+
+#promises
+.finally()			# same as python finally block
+
+#for await of
+
+for await(let request of arrayOfPromises){
+	const data = await request .json()
+}
+
+
+ES2020 - 
+
+#allSettled()
+
+

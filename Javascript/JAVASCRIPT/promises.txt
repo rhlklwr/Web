@@ -1,0 +1,27 @@
+JSON
+AJAX
+Promises - 
+three state - (fullfiled, rejected, pending)
+
+const promise = new Promise((resolve, reject) =>{
+    if (true) {
+        resolve('stuff worked');
+    } else{
+        reject('Error, if broked');
+    }
+})
+
+promise.then(result => console.log(result))
+promise.then(result => result + '!').then(result2 => console.log(result2))
+
+.catch()        # can we use in case of error, always put on last
+
+promise.all([promise1, promise2, promise3, promise4])    #It takes diffrent instatiated Promises
+    .then(values => {
+        console.log(values)
+    })
+
+#promises
+.finally()			# same as python finally block
+
+#allSettled()   # can be used inplace of promiseall()

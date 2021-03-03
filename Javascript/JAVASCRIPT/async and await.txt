@@ -1,0 +1,24 @@
+async and await can be use with function who returns promises
+
+async function playerStart() {
+    const firstMove = await movePlayer(100, 'Left');
+    await movePlayer(400, 'Left');
+    await movePlayer(10, 'Right');
+    await movePlayer(330, 'Left');
+}
+
+eg.
+
+fetch("some url").then(resp => resp.json()).then(console.log)
+
+async function fetchUser() {
+    const resp = await fetch("some url");
+    const data = await resp.json();
+    console.log(data);
+}
+
+#for await of
+
+for await(let request of arrayOfPromises){
+	const data = await request .json()
+}
