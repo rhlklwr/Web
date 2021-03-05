@@ -1,0 +1,19 @@
+Johny-Five - library for robots
+
+node script.js
+
+globalThis - it points to window object
+
+globalThis === window       #it works outside browser
+
+const new = require('file path')        # to import module
+module.export ={
+    new : new
+}
+
+To use import from      # name file script.js to script.mjs
+
+npm init -y         #to create package.json
+npm install nodemon --save-dev      #-dev to add into dev dependency
+
+types of module - 
