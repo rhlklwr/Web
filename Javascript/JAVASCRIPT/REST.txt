@@ -1,0 +1,28 @@
+RESTful API
+
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+
+app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json())
+
+app.get('/', (req, res) => {
+    req.query       #it is for GET request {localhost:3000/?name=rahul&age=21}
+    req.body
+    req.header
+    req.params      # it will have parameters {localhost:3000/123}
+    res.status(200).send("getting root")
+})
+
+app.listen(3000);
+
+# How to access static asset
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+
+app.use(express.static('file path'));
+

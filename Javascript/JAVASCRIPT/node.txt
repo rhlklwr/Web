@@ -15,5 +15,8 @@ To use import from      # name file script.js to script.mjs
 
 npm init -y         #to create package.json
 npm install nodemon --save-dev      #-dev to add into dev dependency
+npm install express
 
-types of module - 
+Node file system module - 
+
+
