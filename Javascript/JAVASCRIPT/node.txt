@@ -19,4 +19,5 @@ npm install express
 
 Node file system module - 
 
-
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
