@@ -15,7 +15,7 @@ import Register from './components/Register/Register';
 
 
 const app = new Clarifai.App(
-  {apiKey: 'cd2cbe6f65f34f41a30f45d4722fbb2f'}
+  {apiKey: 'API KEY'}
 )
 
 const  particlesOptions = {
@@ -83,7 +83,22 @@ class App extends Component {
   onButtonSubmit = () =>{
     this.setState({imageUrl: this.state.input})
     app.models.predict(FACE_DETECT_MODEL, this.state.input)
-    .then(response => this.displayFaceBox(this.calculateFaceLocation(response)))
+    .then(response =>{
+      if(response){
+        fetch("http://localhost:3001/image",{
+              method: 'put',
+              headers: {'content-type': 'application/json'},
+              body: JSON.stringify({
+              id: this.state.user.id
+          })
+      })
+        .then(response => response.json())
+        .then(count => {
+          this.setState(Object.assign(this.state.user, {entries: count}))
+        })
+      }
+      this.displayFaceBox(this.calculateFaceLocation(response))
+    })
     .catch(err => console.log(err))
   }
 

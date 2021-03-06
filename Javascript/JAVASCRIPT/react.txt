@@ -29,6 +29,8 @@ onSearchChange = (event) =>{}
 
 JSON place holder  - fake API
 
+The Object.assign() method copies all enumerable own properties from one or more source objects to a target object. It returns the target object.
+
 Life cycle methods
 
 Libraries -
