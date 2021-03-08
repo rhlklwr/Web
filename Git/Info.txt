@@ -110,7 +110,14 @@ git add -A or git add --all     #It will stage all changes in entire working tre
 git add -u or git add --update  #It will add all modified and updated file but not untracked file
 
 
-
+Remove existing origin and add new origin to your project directory
+>$ git remote show origin
+>$ git remote rm origin
+>$ git add .
+>$ git commit -m "First commit"
+>$ git remote add origin Copied_origin_url
+>$ git remote show origin
+>$ git push origin master
 
 
 

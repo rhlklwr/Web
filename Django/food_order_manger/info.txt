@@ -8,8 +8,6 @@ python manage.py createsuperuser
 python manage.py migrate
 python manage.py createmigrations
 
-
-
 Heroku - 
 pip install gunicorn whitenoise
 create runtime.txt
@@ -19,8 +17,3 @@ heroku login
 git init
 heroku git:remote -a crm-rhlklwr / heroku create app_name
 git push heroku master
-
-
-troubleshoots - 
-heroku open
-heroku logs --tail
