@@ -1,0 +1,15 @@
+check out this package dotenv,
+
+create a new file .env in your working directory
+
+install dotenv by npm install dotenv
+
+add this to your app require('dotenv').config()
+
+in that file write process.env.CI = false
+
+add .env to your .gitignore [if using git]
+
+restart your app.
+
+OR run this CI=false npm run build
