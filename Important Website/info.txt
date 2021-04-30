@@ -23,3 +23,8 @@ CSS3 pattern gallery
 https://www.clarifai.com/
 
 https://www.postgresqltutorial.com/
+
+Pandas practice
+https://www.stratascratch.com/?via=keith
+
+https://www.scala-exercises.org/scala_tutorial/classes_vs_case_classes

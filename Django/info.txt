@@ -1,3 +1,5 @@
+youtube channel - very academy  (for further learning)
+
 Django - 
 
 django-admin

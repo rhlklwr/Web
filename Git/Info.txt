@@ -46,7 +46,9 @@ git checkout master
 
 git pull origin master
 
+# to check if branch is merged or not
 git branch --merged
+git branch --no-merged   
 
 git merge <branch name>
 
@@ -76,6 +78,8 @@ git reset --soft <hash>  # It reset the previous commit but keep the changes in 
 git reset <hash>            # It will keep the changes but not in staging area instead of working file/Directory
 git reset --hard <hash>     # It will remove all the tracked file but it will leave untracked file
 git clean -df               # To get rid of untracked file
+
+git reset HEAD~2
 
 
 git reflog       # To get back commit delete by Hard reset

@@ -341,4 +341,11 @@ ES2020 -
 
 #allSettled()
 
+prototype
 
+
+Customer - 
+
+
+
+JIRA
