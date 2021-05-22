@@ -349,3 +349,6 @@ Customer -
 
 
 JIRA
+
+Weird parts of JAVASCRIPT
+

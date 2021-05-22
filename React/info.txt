@@ -1,0 +1,10 @@
+props, props.children
+
+onClick 
+
+onChange        #gives synthetic event which can use to grab value using event.target.value
+
+this.setState is a Asynchoronus function call, so use () => console.log(this.state) so it will run after setState
+
+never run setState under render function, it will create infinite loop between render and setState
+
