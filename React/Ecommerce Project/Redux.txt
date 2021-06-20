@@ -1,0 +1,16 @@
+Redux - 
+
+1. Single Source of Truth
+2. State is read only
+3. Changes using pure functions
+
+Action => Root reducer => Store (it contains all state) => DOM changes
+
+Flux Pattern (instead of MVC pattern)
+
+Action => Dispatcher => Store => View
+
+import { provider } from 'react-redux'
+
+
+

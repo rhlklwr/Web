@@ -1,0 +1,31 @@
+React Router - 
+
+import { Switch, Route } from 'react-router-dom';
+
+<Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/hats' component={HatsPage} />
+</Switch>
+
+import { BrowserRouter } from 'react-router-dom';
+
+<BrowserRouter>
+    <App />
+</BrowserRouter>,
+
+withRouter
+You can get access to the history object’s properties and the closest <Route>'s match via the withRouter higher-order component. withRouter will pass updated match, location, and history props to the wrapped component whenever it renders.
+
+import { Link } from 'react-router-dom';
+<Link className='option' to='/shop'>
+
+
+In the previous lesson, you may have seen the strange syntax: import { ReactComponent as Logo }
+
+This is a new special syntax when importing SVG in React. The ReactComponent import name is special and tells Create React App that you want a React component that renders an SVG, rather than its filename. You can read more about it here, but keep in mind that this is a React library special syntax:
+
+this.setState({ [name]: value})
+In Javascript, when you create an object literal {} and you wrap the object’s key in array brackets [key] you can dynamically set that key.
+So in our example when I created the disneyCharacter object, I dynamically set the object’s key in the disneyCharacter object to Mickey Mouse.
+
+https://medium.com/@bretdoucette/understanding-this-setstate-name-value-a5ef7b4ea2b4
