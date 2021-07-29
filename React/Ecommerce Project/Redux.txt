@@ -12,5 +12,8 @@ Action => Dispatcher => Store => View
 
 import { provider } from 'react-redux'
 
+action object
+
+import { connect } from 'react-redux'
 
 

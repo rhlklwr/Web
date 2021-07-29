@@ -25,3 +25,7 @@ promise.all([promise1, promise2, promise3, promise4])    #It takes diffrent inst
 .finally()			# same as python finally block
 
 #allSettled()   # can be used inplace of promiseall()
+
+fetch('http://example.com/movies.json')
+  .then(response => response.json())
+  .then(data => console.log(data));

@@ -124,8 +124,25 @@ Remove existing origin and add new origin to your project directory
 >$ git push origin master
 
 
+git merge and rebase
+
+git merge --squash <branch>  #It will allow to summarise all the commit from current branch to new branch
 
 
+use git merge to add other branch changes to main branch
+>go to main branch
+git merge <your feature branch>
 
+Using git rebase
+>go to feature branch
+
+git rebase <main branch>
+
+https://hackernoon.com/git-merge-vs-rebase-whats-the-diff-76413c117333
+
+In summary, when looking to incorporate changes from one Git branch into another:
+Use merge in cases where you want a set of commits to be clearly grouped together in history.
+Use rebase when you want to keep a linear commit history.
+DON'T use rebase on a public/shared branch.
 
 

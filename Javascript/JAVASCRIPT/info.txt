@@ -87,12 +87,12 @@ console.log()
 
 DOM Selectors
 --------------
-getElementsByTagName
-getElementsByClassName
-getElementById
+document.getElementsByTagName
+document.getElementsByClassName
+document.getElementById
 
-querySelector
-querySelectorAll
+document.querySelector
+document.querySelectorAll
 
 getAttribute
 setAttribute
