@@ -16,6 +16,24 @@ import { provider } from 'react-redux'
 action object
 We always return new object so our component can be re-render
 
+redux flow - 
+Action => Middleware => Root Reducer => Store => Dom changes
+
+npm install redux redux-logger react-redux
+
+
+import {Provider} from 'react-redux';
+add <Provider> in main <App> so every one can access store object
+eg:- <Provider>
+            <App>
+        <Provider>
+
+import { combineReducers } from 'redux';
+
+import { createStore, applyMiddleware } from 'redux';
+import logger from 'redux-logger';
+
+
 
 import { connect } from 'react-redux'
 
