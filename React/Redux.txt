@@ -1,18 +1,21 @@
 Redux - 
 
 1. Single Source of Truth
-2. State is read only
-3. Changes using pure functions
+2. State is read only (state never get modified)
+3. Changes are made only using pure functions
 
-Action => Root reducer => Store (it contains all state) => DOM changes
+Action => Root reducer (it is an pure function) => Store (it contains all state) => DOM changes
 
 Flux Pattern (instead of MVC pattern)
 
-Action => Dispatcher => Store => View
+Action => Dispatcher => Store => View => Action
 
 import { provider } from 'react-redux'
 
+
 action object
+We always return new object so our component can be re-render
+
 
 import { connect } from 'react-redux'
 
