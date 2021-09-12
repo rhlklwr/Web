@@ -34,7 +34,10 @@ import { createStore, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 
 
-
 import { connect } from 'react-redux'
+
+connect is an higher order function which allow to modify our component.
+
+mapStateToProps function - can be name anything but it is an standard
 
 
