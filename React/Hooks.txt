@@ -1,5 +1,7 @@
 Reacts Hooks Tutorial - 
 
+import React, { useState, useEffect } from 'react';
+
 const useStateExample = () => {
     const [state, setState] = useState(initialValue);
 }
@@ -7,4 +9,67 @@ const useStateExample = () => {
 state = current value 
 setState = use this to change the current value such as setState("Hello")
 initialValue = intial value such as "", 0, [], {}
+
+useEffect(() => {
+    console.log()
+}, [setState, state])
+
+useEffect = fire a function whenever our component re-render such as mounting, unmounting
+
+second parameter in array can be provided so useEffect on takes action for that parameter only.
+
+if you pass an empty array [], useEffect will not look for any change and it will only fire one time when component is mounting.
+
+if want to use async do below, never use aysnc directly beacuse it return async function which gives error. Alwasy pass second parameter (such as []) otherwise it will keep render again and again.
+
+useEffect(() => {
+    const fetchFunc = async () =>{
+        await console.log()
+    }
+    fetchFunc();   
+}, []);
+
+Hook Rules - 
+useEffect can not be called inside conditional stament. use it inside useEffect's function.
+
+
+
+ComponentDidMount
+//Class
+componentDidMount() {
+    console.log('I just mounted!');
+}
+ 
+//Hooks
+useEffect(() => {
+    console.log('I just mounted!');
+}, [])
+
+
+ComponentWillUnmount
+//Class
+componentWillUnmount() {
+    console.log('I am unmounting');
+}
+ 
+//Hooks
+useEffect(() => {
+    return () => console.log('I am unmounting');
+}, [])
+
+
+ComponentWillReceiveProps
+//Class
+componentWillReceiveProps(nextProps) {
+    if (nextProps.count !== this.props.count) {
+        console.log('count changed', nextProps.count);
+    }
+}
+ 
+//Hooks
+useEffect(() => {
+    console.log('count changed', props.count);
+}, [props.count])
+
+
 
