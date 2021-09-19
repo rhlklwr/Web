@@ -2,8 +2,8 @@ JAVASCRIPT types
 1. Number
 2. String
 3. Boolean
-4. Undefined
-5. Null
+4. undefined
+5. null
 6. Symbol - var sym1 = Symbol()
 7. Object
 

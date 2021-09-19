@@ -1,0 +1,10 @@
+Reacts Hooks Tutorial - 
+
+const useStateExample = () => {
+    const [state, setState] = useState(initialValue);
+}
+
+state = current value 
+setState = use this to change the current value such as setState("Hello")
+initialValue = intial value such as "", 0, [], {}
+
