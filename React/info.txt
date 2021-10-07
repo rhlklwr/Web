@@ -11,5 +11,4 @@ never run setState under render function, it will create infinite loop between r
 React create virtual dom and do the uni directional data flow, then it check changes with actual dom and make that change in actual dom
 
 
-
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
