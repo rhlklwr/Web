@@ -31,7 +31,7 @@ else if
 ternary operator (confition ? true : false)
 switch
 {
-	switch variable {
+	switch (variable) {
 		case 1:
 			something;
 			break;
@@ -64,7 +64,10 @@ Data structure
 Array
 Object
 
+obj = {new:0, old:1}
+
 let {new, old} = obj
+
 Object{
 	a,
 	b,
@@ -78,6 +81,17 @@ for
 while
 do
 forEach - forEach(myFunction)
+
+eg. - 
+a = 0;
+
+do {
+    console.log("done")
+    a++
+}
+while (a<10);
+
+
 
 NaN - not a Number
 prompt()
