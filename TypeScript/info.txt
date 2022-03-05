@@ -1,0 +1,13 @@
+tsc index.ts
+tsc --init
+tsc --watch index.ts
+
+npx create-react-app . --template typescript
+
+
+
+Core Types - 
+
+Number
+String
+boolean

@@ -1,0 +1,42 @@
+API: Application Programming Interface
+DNS: Domain Name Server
+HTTP: Hypertext Transfer Protocol
+IP: Internet Protocol
+LAN: Local Area Network
+REST: Representational State Transfer
+RNC: Root Name Server
+TLD: Top Level Domain
+TLS: Top Level Server
+WWW: World Wide Web
+URI: Uniform Resource Identifier
+URL: Uniform Resource Locator
+URN: Uniform Resource Name
+WAN: Wide-Area Network
+
+
+GET: Use to fetch a resource from an HTTP server.
+POST / PUT: Use to send data to the HTTP server. Can also be used to update/create new web resource on the HTTP server.
+DELETE: Use to delete an existing resource on the HTTP server.
+HEAD: Use to fetch only the header part of the HTTP response (without the body) of a traditional GET request.
+
+A URI is a string of characters that identifies a particular resource to uniquely identify and locate it around the Web.
+An URL is the most common type of URI. It specifies the means of acting upon or obtaining the representation of a resource describing this resource located on a particular server.
+
+The URL is formed by three parts: scheme, host and path.
+Scheme: it’s a protocol to use to access the resource.
+Host: it’s the server location
+Path: Path to the resource inside the server.
+
+1xx [Informational]: The request was received, continuing process;
+2xx [Successful]: The request was successfully received, understood and accepted;
+3xx [Redirection]: Further action needs to be taken to complete the request;
+4xx [Client Error]: The request contains bad syntax or cannot be fulfilled;
+5xx [Server Error]: The server failed to fulfill a valid request.
+
+
+req.body.title
+req.header('x-auth-token')
+
+res.send()
+res.json()
+
