@@ -12,3 +12,5 @@ React create virtual dom and do the uni directional data flow, then it check cha
 
 
 https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+https://www.freecodecamp.org/news/author/reed
