@@ -11,3 +11,5 @@ Core Types -
 Number
 String
 boolean
+
+? is use for optional
