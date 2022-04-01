@@ -10,6 +10,8 @@ npm install react
 npm install -g live-server
 npm i --save lodash                 # -g for global and -i for local
 
+--legacy-peer-deps #flag for legacy dependens
+
 browserify script.js > bundle.js        #  to conver script.js to bundle.js
 
 npm run test
