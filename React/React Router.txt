@@ -1,4 +1,12 @@
-React Router - 
+Old React Router - 
+
+https://medium.com/the-andela-way/understanding-the-fundamentals-of-routing-in-react-b29f806b157e
+
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+<BrowserRouter>
+    <App />
+</BrowserRouter>,
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -7,11 +15,7 @@ import { Switch, Route } from 'react-router-dom';
         <Route path='/hats' component={HatsPage} />
 </Switch>
 
-import { BrowserRouter } from 'react-router-dom';
 
-<BrowserRouter>
-    <App />
-</BrowserRouter>,
 
 withRouter
 You can get access to the history object’s properties and the closest <Route>'s match via the withRouter higher-order component. withRouter will pass updated match, location, and history props to the wrapped component whenever it renders.
@@ -19,6 +23,14 @@ You can get access to the history object’s properties and the closest <Route>'
 import { Link } from 'react-router-dom';
 <Link className='option' to='/shop'>
 
+import { useParams } from 'react-router-dom';
+
+const { id } = useParams();
+
+
+<Route exact path="/">
+  {loggedIn ? <Redirect to="/dashboard" /> : <PublicHomePage />}
+</Route>
 
 In the previous lesson, you may have seen the strange syntax: import { ReactComponent as Logo }
 
@@ -29,3 +41,59 @@ In Javascript, when you create an object literal {} and you wrap the object’s 
 So in our example when I created the disneyCharacter object, I dynamically set the object’s key in the disneyCharacter object to Mickey Mouse.
 
 https://medium.com/@bretdoucette/understanding-this-setstate-name-value-a5ef7b4ea2b4
+
+
+
+----------------------------------------------------------------------------------------------------------------
+React Router V6 - 
+
+import { BrowserRouter } from 'react-router-dom';
+
+import { Routes, Route } from 'react-router-dom';
+
+
+// By default now they are exact match
+
+<Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/hats' element={<HatsPage />} />
+</Routes>
+
+
+nested Routes - it will allow children to use relative path of parent
+if parent is /home and children shop - then /home/shop will match
+
+<Routes>
+        <Route path='/' element={<HomePage />}>
+            <Route path='hats' element={<HatsPage />} />
+        </Route>
+</Routes>
+
+
+import { Outlet } from 'react-router-dom';
+
+then inside children page file
+
+return (
+    <div>
+        <shop />
+        <Outlet />
+    </div>
+)
+
+
+// you can pass index - so when it will go to parent it will automatically load child with index
+<Routes>
+        <Route path='/' element={<HomePage />}>
+            <Route index element={<HatsPage />} />
+        </Route>
+</Routes>
+
+
+// Link
+
+import { Link } from 'react-router-dom';
+
+<Link className="nav" to="/shop">
+    <div></div>
+</Link>
