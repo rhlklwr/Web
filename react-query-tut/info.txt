@@ -39,3 +39,15 @@ return(<QueryClientProvider client={queryClient}>
 
 status - it will show status such as success, loading, error
 react-query will try to fetch 3 times before making status from loading to error
+
+// setting CONFIG
+const { data, status } = useQuery('planets', fetchPlanets, {
+        staleTime: 2000,
+    });
+
+
+// first one is key and all other in array is query params
+
+const { data, status } = useQuery(['planets', 'hello'], fetchPlanets, {
+        staleTime: 2000,
+    });
