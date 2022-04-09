@@ -1,0 +1,38 @@
+React Context is made for these types of situations. What is does is it creates a virtual store for these states which are going to be used through out the tree. Then you keep them in your Root file i.e. App.js . And now you can use these state at any level in your tree.
+
+
+to check null object == Object.entries(a).length
+
+import { createContext, useState } from 'react'
+
+
+// as actual value you want to access
+export const valContext = createContext({
+    currentVal: null,
+    setCurrentVal: () => null,
+
+});
+
+
+export const valProvider = ({ children }) => {
+    const [currentVal, setCurrentVal] = useState(null);
+    const value = { currentVal, setCurrentVal };
+    return <valContext.Provider value={value}> {children} </valContext.Provider>
+}
+
+
+eg. - 
+
+<valProvider>
+    <App />
+</valProvider>
+
+
+import { useContext } from 'react';
+
+import { valContext} from './valContext'
+
+
+const { setCurrentVal } = useContext(valContext)
+
+const { currentVal } = useContext(valContext)
