@@ -1,0 +1,4 @@
+Redux-Ducks
+
+https://github.com/erikras/ducks-modular-redux
+

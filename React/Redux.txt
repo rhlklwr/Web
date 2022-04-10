@@ -136,4 +136,125 @@ useEffect(() => {
 }, [dispatch])
 
 
+-> Selector
+
+import { useSelector } from 'react-redux'
+
+const currentUser = useSelector((state) => state.user.currentUser)
+
+OR
+
+create stor/user/user.selector.js
+
+export const selectCurrentUser = (state) => state.user.currentUser
+
+
+on Navigation component -
+
+const currentUser = useSelector(selectCurrentUser)
+
+
+-> Middleware
+
+const loggerMiddleware = (store) => (next) => (action) => {
+    if(!action.type) {
+        return next(action)
+    }
+
+    console.log('type', action.type)
+    console.log('payload', action.payload)
+    console.log('currentState', store.getstate())
+    console.log('currentState', store.getstate())
+
+    next(action)
+
+    console.log('nextSate', store.getstate())
+}
+
+
+### Reselect
+
+it is use for memoization of selector state - so it can prevent un-necessary render
+
+npm i reselect
+
+import { createSelector } from 'reselect'
+
+const selectCategoryReducer = (state) => state.categories
+
+export const selectCategories = createSelector(
+    [selectCategoryReducer, selectCurrentUser],
+    (categoriesSlice, currentUser) => categoriesSlice.categories
+)
+
+
+### Redux persist
+
+npm i redux-persist
+
+import { persistStore, persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage'
+
+const persistConfig = {
+    key: 'root',
+    storage,
+    blacklist: ['user'],
+}
+
+const persistReducer = persistReducer(persistConfig, rootReducer)
+
+export const store = createStore(persistReducer, undefine, composeEnhancers)
+
+export const persistor = persistStore(store)
+
+
+in index.js
+import { persistGate } from 'react-persist/integration/react'
+import { persistor } from 
+
+<Provider store={store}>
+    <persistGate loading={renderSomethingWhileWaiting} persistor={persistor}>
+        <App />
+    </persistGate>
+</Provider>
+
+
+### Redux thunk
+
+redux thunk allow action which are function
+
+npm i redux-thunk
+
+import thunk from 'redux-thunk'
+
+const middleWares = [process.env.NODE_ENV !== 'production' && logger, thunk].filter(Boolean)
+
+OR
+
+const middleWares = [logger, thunk]
+const composeEnhancers = compose(applyMiddleware(...middleWares))
+
+
+inside action
+
+export const fetchCategoriesStart = () => createAction(CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_START)
+export const fetchCategoriesSuccess = () => createAction(CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_SUCCESS, categories)
+export const fetchCategoriesFailed = () => createAction(CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_FAILED, error)
+
+create thunk actions
+
+export const fetchCategoriesAsync = () => aysnc (dispatch) => {
+    dispatch(fetchCategoriesStart())
+    try{
+        const categoriesArray = await getCategoriesAndDocuments('categories')
+        dispatch(fetchCategoriesSuccess(categoriesArray))
+    } catch(error) {
+        dispatch(fetchCategoriesFailed(error))
+    }
+}
+
+
+### Redux Saga
+
+sideeffect state managment
 

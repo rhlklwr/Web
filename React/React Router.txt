@@ -97,3 +97,8 @@ import { Link } from 'react-router-dom';
 <Link className="nav" to="/shop">
     <div></div>
 </Link>
+
+
+import { useParams } from 'react-router-dom';
+
+const { id } = useParams();
